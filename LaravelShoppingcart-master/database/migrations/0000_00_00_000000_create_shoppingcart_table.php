@@ -7,7 +7,7 @@ use Illuminate\Database\Migrations\Migration;
 class CreateShoppingcartTable extends Migration
 {
     /**
-     * Run the migrations. here
+     * Run the migrations.
      */
     public function up()
     {
@@ -18,6 +18,7 @@ class CreateShoppingcartTable extends Migration
             $table->nullableTimestamps();
 
             $table->primary(['identifier', 'instance']);
+            #called objects
         });
     }
     /**
